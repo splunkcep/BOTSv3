@@ -21,14 +21,30 @@ md5sum botsv3_data_set.tgz
    
 3. Instala las aplicaciones y Add-Ons listados en la sección [Software Requerido](#software-requerido) a continuación. Es importante que coincida la versión específica de cada aplicación y complemento.
 4. Descomprime/desempaqueta el archivo descargado en $SPLUNK_HOME/etc/apps
-5. Reinicia Splunk
-6. Los datos de BOTS v3 estarán disponibles buscando:
+
+``` bash
+sudo tar -xzvf botsv3_data_set.tgz -C /opt/splunk/etc/apps
+```
+
+5. Da acceso al dataset a splunkuser
+
+``` bash
+sudo chown -R splunkuser:splunkuser /opt/splunk/etc/apps/botsv3_data_set
+```
+   
+6. Reinicia Splunk
+
+``` bash
+/opt/splunk/bin/splun restart
+```
+
+7. Ve a **Search App** y valida los datos realizando la siguiente búsqueda
 ``` bash
 index=botsv3 earliest=0
 ```
-6. Ten en cuenta que, dado que los datos se distribuyen en un formato pre-indexado, no hay límites de licencia basados en volumen de los que preocuparse.
+8. Ten en cuenta que, dado que los datos se distribuyen en un formato pre-indexado, no hay límites de licencia basados en volumen de los que preocuparse.
 
-## Data Sourcetypes included
+## Data Sourcetypes incluidos
 * access_combined
 * alternatives
 * amazon-ssm-agent
@@ -134,10 +150,7 @@ index=botsv3 earliest=0
 
 
 ## Software Requerido
-The dataset requires the following software which is distributed and licensed separately
-and should be installed before using the dataset. The versions listed are
-those that were used to create the dataset. Different versions of the software
-may or may not work properly. If you are new to Splunk, follow [these instructions](http://docs.splunk.com/Documentation/Splunk/latest/Installation/Whatsinthismanual) to install the free Splunk Enterprise trial and [these instructions](https://docs.splunk.com/Documentation/AddOns/released/Overview/Singleserverinstall) to install apps and add-ons.
+Este dataset requiere el siguiente software que se distribuye y licencia por separado, y debe instalarse antes de usar el conjunto de datos. Las versiones listadas son las que se utilizaron para crear el conjunto de datos. Diferentes versiones del software pueden o no funcionar correctamente. Si eres nuevo en Splunk, sigue [estas instrucciones](https://docs.splunk.com/Documentation/AddOns/released/Overview/Singleserverinstall) para instalar los Apps y Add-Ons.
 
 
 |	App / Add-on	|	Version	|	Download
@@ -170,15 +183,19 @@ may or may not work properly. If you are new to Splunk, follow [these instructio
 |	SA-cim_vladiator	                              |	1.2	|	https://splunkbase.splunk.com/app/2968/
 
 
-## Warning
-**Please be advised that this dataset may contain profanity, slang, vulgar expressions, and/or generally offensive terminology. Please use with discretion.**
+## Advertencia
 
-This dataset contains evidence captured during actual computer security incidents, or from realistic lab recreations of security incidents. As such, the dataset **may** contain profanity, slang, vulgar expressions, and/or generally offensive terminology. The authors believe that the educational benefits of preserving the realism of the dataset outweigh the risk of offending some users. If the possibility of encountering this type of offensive material is a concern to you or to any audience with whom you plan to share the dataset, please stop now and do not continue.
+**Tenga en cuenta que este conjunto de datos puede contener blasfemias, jerga, expresiones vulgares y/o terminología generalmente ofensiva. Úselo con discreción.**
 
-## Authors
-Written in 2018 by Ryan Kovar, David Herrald, James Brodsky, John Stoner, Jim Apger, David Veuve, Lily Lee, and Matt Valites
 
-## Copyright and License
-To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this software to the public domain worldwide. This software is distributed
-without any warranty. You should have received a copy of the CC0 Public Domain Dedication along with this software. If not, see http://creativecommons.org/publicdomain/zero/1.0/.
+Este conjunto de datos contiene evidencia capturada durante incidentes reales de seguridad informática, o de recreaciones realistas en laboratorio de incidentes de seguridad. Como tal, el conjunto de datos puede contener blasfemias, jerga, expresiones vulgares y/o terminología generalmente ofensiva. Los autores creen que los beneficios educativos de preservar el realismo del conjunto de datos superan el riesgo de ofender a algunos usuarios. Si la posibilidad de encontrar este tipo de material ofensivo es una preocupación para usted o para cualquier audiencia con la que planea compartir el conjunto de datos, deténgase ahora y no continúe.
 
+
+## Autores
+
+Escrito en 2018 por Ryan Kovar, David Herrald, James Brodsky, John Stoner, Jim Apger, David Veuve, Lily Lee y Matt Valites.
+
+
+## Derechos de Autor y Licencia
+
+En la medida de lo posible bajo la ley, los autores han dedicado todos los derechos de autor y derechos conexos y afines de este software al dominio público en todo el mundo. Este software se distribuye sin ninguna garantía. Deberías haber recibido una copia de la Dedicación de Dominio Público CC0 junto con este software. Si no, consulta http://creativecommons.org/publicdomain/zero/1.0/.
