@@ -1,5 +1,5 @@
 # Boss of the SOC (BOTS) Dataset Version 3
-Un conjunto de datos de ejemplo de nuestra plataforma CTF (Capture the Flag)profesionales de la seguridad de la información, investigadores, estudiantes y entusiastas. 
+Este es un conjunto de datos de ejemplo de nuestra plataforma CTF (Capture the Flag) para profesionales de la seguridad de la información, investigadores, estudiantes y entusiastas. 
 
 Esta página contiene información sobre la versión 3 del conjunto de datos del **Boss of the Soc (BOTS)**. 
 
