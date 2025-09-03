@@ -39,7 +39,7 @@ sudo chown -R splunkuser:splunkuser /opt/splunk/etc/apps/botsv3_data_set
 ```
 
 7. Ve a **Search App** y valida los datos realizando la siguiente búsqueda
-``` bash
+``` SPL
 index=botsv3 earliest=0
 ```
 8. Ten en cuenta que, dado que los datos se distribuyen en un formato pre-indexado, no hay límites de licencia basados en volumen de los que preocuparse.
