@@ -181,14 +181,6 @@ Este dataset requiere el siguiente software que se distribuye y licencia por sep
 |	Splunk Add-on for AWS	                          |	4.5.0	|	https://splunkbase.splunk.com/app/1876/
 |	ES Content Updates	                            |	1.0.25	|	https://splunkbase.splunk.com/app/3449/
 |	SA-cim_vladiator	                              |	1.2	|	https://splunkbase.splunk.com/app/2968/
-|  Lookup File Editor | 4.0.5 | https://splunkbase.splunk.com/app/1724/ 
-|  Punchcard - Custom Visualization | 1.5.0 | https://classic.splunkbase.splunk.com/app/3129
-|  Force Directed App For Splunk | 3.1.0 | https://splunkbase.splunk.com/app/3767
-|  Splunk Sankey Diagram - Custom Visualization | 1.6.0 | https://classic.splunkbase.splunk.com/app/3112
-|  Alert Manager Add-On | 2.3.1 | https://splunkbase.splunk.com/app/3365
-|  Alert Manager | 3.0.11 | https://splunkbase.splunk.com/app/2665
-
-
 
 
 ## Advertencia
