@@ -35,7 +35,7 @@ sudo chown -R splunkuser:splunkuser /opt/splunk/etc/apps/botsv3_data_set
 6. Reinicia Splunk
 
 ``` bash
-/opt/splunk/bin/splun restart
+/opt/splunk/bin/splunk restart
 ```
 
 7. Ve a **Search App** y valida los datos realizando la siguiente búsqueda
